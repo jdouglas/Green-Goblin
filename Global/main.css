@@ -1,0 +1,1968 @@
+html,
+body
+{
+    font: normal 1em/1em Arial,Verdana, Helvetica;
+    color:#333;
+    background:#DDEFD7;
+    line-height: 1.3em;
+    /*font-size:12pt*/
+}
+
+a:link
+{
+    /*text-decoration:none;*/
+    color: #273F8D;
+    outline: none
+}
+
+div.container
+{
+    position:relative;
+    width:1126px;
+    margin:auto;
+    display: block
+}
+div.main
+{
+	margin: .1em 0 0 0;
+}
+div#browserCheck
+{
+    background:#333;
+    color:#fff;
+    font-size:.7em;
+    text-align:center
+}
+div#browserCheck a
+{
+    color:#fff;
+    font-weight:bold;
+    text-decoration:underline
+}
+.rounded
+{
+	-moz-border-radius: .5em;
+	border-radius: .5em
+}
+/* HEADER ELEMENTS */
+
+/*div.header
+{
+	margin: 0 0 .2em 0;
+}*/
+
+div.header .logo
+{
+    padding:0;
+    background: #A9C58B;
+    width: 18.4% !important;
+    height: 8em;
+    cursor: pointer;
+}
+
+div.header div.nav
+{
+	width: 81.6% !important;
+}
+
+div.header > div > div
+{
+	margin: 0 !important
+}
+
+div.header ul
+{
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0
+}
+
+div.header ul li
+{
+	float: left;
+	margin: 0 0 .3em .2em;
+}
+
+div.header ul li.bot
+{
+	margin-bottom: 0;
+}
+
+div.header a
+{
+    display: block;
+    float: left;
+    width: 8em;
+    padding: 5.9em 0 .9em 0;
+    /*margin: 0 0 .3em .2em;*/
+    text-align: center;
+    font-weight: bold !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #A9C58B url('http://media.goodwillindy.org/images/excel-center/2012/nav/nav-bottom-edge.jpg') bottom left repeat-x !important;
+    background:-moz-linear-gradient(19% 93% 90deg,#679931, #A9C58B, #A9C58B 0%) !important; /* Firefox */
+    background: -ms-linear-gradient(top, #A9C58B 0%,#8f0222 80%,#679931 100%) !important; /* IE10+ */
+    background: -webkit-gradient(linear, 0% 92%, 0% 100%, from(#A9C58B), to(#679931), color-stop(.1,#679931)) !important; /* For webkit */
+}
+
+div.header a.nav-small
+{
+    height: 3.9em;
+    padding:0;
+    line-height: 3.9em;
+    background: #A9C58B !important;
+    font-size: 1em !important;
+}
+
+div.header img.fb
+{
+    height:2em;
+    padding:1em
+}
+
+div.header a:link,
+div.header a:hover,
+div.header a:visited
+{
+    color:#fff
+}
+/* END HEADER ELEMENTS */
+/* COMMON INNER PAGE ELEMENTS */
+/*section
+{
+    position:relative;
+    margin:.1em;
+    width:70.4em;
+    float:left;
+    min-height:25em;
+    line-height:1.5em
+}
+section > aside
+{
+    display:block;
+    float:right;
+    margin: 0 0 1em 1em;
+    padding:.5em;
+    width:11em;
+    line-height:1.2em;
+    color:#77983A;
+    font-weight:bold;
+    border-top:.1em solid #77983A;
+    border-bottom:.1em solid #77983A
+}*/
+/*aside#text
+{
+    display:block;
+    float:left;
+    width: 35em;
+    line-height:1.5em
+}
+aside#text > header
+{
+min-height:15em
+}
+aside#text h1
+{
+    display:block;
+    font-size: 4em;
+    margin: 1em;
+    color:#23408F
+}
+aside#text h1 > em
+{
+    display:block;
+    font-size:.4em;
+    margin:0 0 1em .5em
+}
+aside#text h1 > span
+{
+    display:block;
+    font-size:.5em;
+    margin:1em 0 0 1em
+}
+aside#text > a
+{
+    display:block;
+    margin: .2em 1em .2em 0;
+    padding:.8em;
+    text-align:right;
+    background:#FFBD24;
+    font-weight:bold;
+    text-decoration:none;
+    color:#fff;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+}
+aside#text > a:hover
+{
+    background:#FFD28F
+}
+aside#text > a.selected
+{
+    background:#E6A100
+}*/
+input[type="text"],
+textarea,
+input[type="submit"],
+select
+{
+    border:.1em solid #77983A;
+    padding:.5em;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+    resize: none;
+}
+input[type="text"]
+{
+max-width:10em
+}
+/*div.confirmation-cms-block
+{
+	border: .1em solid red;
+}*/
+
+.modal
+{
+    position:absolute;
+    left: 50%;
+	top: 50%;
+    z-index:3;
+    display:none;
+    padding:2em;
+    background:url('http://media.goodwillindy.org/images/excel-center/2012/common/modal-bg.png');
+    -moz-border-radius: .5em;
+    border-radius: .5em
+}
+
+.modal > div
+{
+    background: #DDEFD7;
+    width: 100%;
+    /*overflow: auto;*/
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+    color: #77983A;
+    border: .1em solid #fff;
+}
+
+.modal .sfError
+{
+	color: red;
+	font-size: .7em;
+	text-align: center;
+}
+
+div.form-msg
+{
+    display:block;
+    min-height:22em;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+    color:#fff;
+    background:#9CAFE7 !important;
+}
+
+.form-msg p
+{
+	margin: 1em;
+}
+
+.form-msg h2
+{
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	background: #fff;
+	padding: .6em;
+	margin: 1em;
+	color: #77983A;
+}
+
+.modal h2
+{
+	padding: .5em;
+	font-size: 2em
+}
+
+.modal input,
+.modal label,
+.modal select
+{
+	margin: .5em 0 .5em 1em;
+	display: block;
+}
+
+/*.modal select
+{
+	margin: ;
+}*/
+
+/*.modal span
+{
+	width: 100%
+}*/
+
+.modal div input[type="submit"]
+{
+    width: 5em;
+    display: block;
+    margin: 1em auto
+}
+.modal .close
+{
+    position:absolute;
+    z-index: 99;
+    top:-.7em;
+    right:-.7em;
+    cursor:pointer
+}
+
+/*.form-msg span
+{
+    display:block;
+    margin:1em auto;
+    padding:1em;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+    background:#fff;
+    color:#333;
+    text-align:center;
+    font-weight:bold
+}*/
+    /* MODAL POPUP */
+
+
+
+
+
+
+/*.modal > div header
+{
+    display:block;
+    padding:.5em 0 .1em 1em;
+    color:#77983A
+}
+.modal > div header h2
+{
+    font-size: 3em;
+    margin:.4em 0 .2em 0
+}
+.modal > div header h2 span
+{
+    display:block;
+    margin: .7em 0 0 1.4em;
+    font-size:.5em
+}*/
+/*.modal > div div h3
+{
+    display:block;
+    height:1.5em;
+    line-height:1.5em;
+    margin: 0 0 0 .5em;
+    font-size:1.5em;
+}
+.modal > div div h3 span
+{
+    font-size:.5em;
+    height:1.5em;
+}*/
+/*.modal > div p *
+{
+    display:block;
+    margin:.5em 1em .5em 1em
+}*/
+
+
+
+/*    .modal
+    {
+        position:absolute;
+        left:50%;
+        top:5em;
+        z-index:3;
+        display:none;
+        padding:2em;
+        background:url('http://media.goodwillindy.org/images/excel-center/2012/common/modal-bg.png');
+        -moz-border-radius: .5em;
+        border-radius: .5em
+    }
+    .modal > div
+    {
+        background:#DDEFD7;
+        width:100%;
+        overflow:auto;
+        -moz-border-radius: .5em;
+        border-radius: .5em;
+        color:#77983A
+    }
+    .modal > div header
+    {
+        display:block;
+        padding:.5em 0 .1em 1em;
+        color:#77983A
+    }
+    .modal > div header h2
+    {
+        font-size: 3em;
+        margin:.4em 0 .2em 0
+    }
+    .modal > div header h2 span
+    {
+        display:block;
+        margin: .7em 0 0 1.4em;
+        font-size:.5em
+    }
+    .modal > div div h3
+    {
+        display:block;
+        height:1.5em;
+        line-height:1.5em;
+        margin: 0 0 0 .5em;
+        font-size:1.5em;
+    }
+    .modal > div div h3 span
+    {
+        font-size:.5em;
+        height:1.5em;
+    }
+    .modal > div p *
+    {
+        display:block;
+        margin:.5em 1em .5em 1em
+    }
+    .modal > div p input[type="submit"]
+    {
+        width:5em;
+        margin:0 auto
+    }
+    .modal > img
+    {
+        position:absolute;
+        top:-.7em;
+        right:-.7em;
+        cursor:pointer
+    }*/
+    /* END MODAL */
+/* CONTACT POPUP */
+/*div#contactPopup
+{
+    display:none;
+    position:absolute;
+    z-index:3;
+    width:12em;
+    background:#679931;
+    -moz-box-shadow: .2em .2em .5em #333;
+    -webkit-box-shadow: .2em .2em .5em #333;
+    box-shadow: .2em .2em .5em #333;
+}
+div#contactPopup a
+{
+    display:block;
+    padding:1em;
+    margin:.5em;
+    background:#A9C58B;
+    text-decoration:none;
+    font-weight:bold
+
+}
+div#contactPopup img
+{
+    position:absolute;
+    z-index:3;
+    top:-1em;
+    right:1em
+}*/
+
+/* END CONTACT POPUP */
+/* END COMMON */
+/* MODAL WINDOWS */
+
+div.learn_more,
+div.refer_a_friend,
+div.contact_form
+{
+    width:33em
+}
+
+div.learn_more div.aside,
+div.refer_a_friend div.aside
+{
+    width: 49%;
+    /*overflow: auto;*/
+    float: left
+}
+
+div.refer_a_friend div.aside h2
+{
+	font-size: 1.1em;
+	border-bottom:.2em solid #649B2B;
+	text-indent: .5em;
+}
+
+/*p#checkbox input[type="checkbox"]
+{
+display:inline-block;
+float:left
+}*/
+
+/*p.submit
+{
+    width:100%;
+    display:block;
+    height:3em;
+    clear:both;
+}*/
+/*div.learn_more article header h2 span
+{
+    margin: .7em 0 0 3.4em;
+}*/
+
+
+/*#refer_a_friend,
+#learn_more,
+#contact_form
+{
+    width:30em
+}
+
+#refer_a_friend div,
+#learn_more div,
+#contact_form div
+{
+    width:14.5em;
+    overflow:auto;
+    float:left
+}
+#refer_a_friend p
+{
+    width:14.5em;
+    float:left;
+    margin: .2em 0 .2em 0
+}
+#contact_form div
+{
+    width:28em
+}
+
+#contact_form article div div
+{
+display:none
+}
+p#checkbox input[type="checkbox"]
+{
+display:inline-block;
+float:left
+}
+p.submit
+{
+    width:100%;
+    display:block;
+    height:3em;
+    clear:both;
+}
+#learn_more article header h2 span
+{
+    margin: .7em 0 0 3.4em;
+}*/
+    /* CONTACT FORM */
+
+	div.contact_form
+	{
+	    width:24em
+	}
+	
+/*	div.contact_form div *
+	{
+	margin: 0 .5em;
+	text-align: left;
+	}*/
+	div.contact_form > div > div
+	{
+		margin: 1em;
+	}
+	div.contact_form div.more_info
+	{
+		display: none;
+	}
+
+    /* END CONTACT FORM */
+/* END MODAL WINDOWS */
+/* FRONT PAGE */
+
+div.image-rotator
+{
+    position:relative;
+    width: 100%;
+    height:28.1em;
+    background:url('http://media.goodwillindy.org/images/excel-center/2012/common/spinner.gif') center center no-repeat;
+}
+
+div.image-rotator a
+{
+    position:absolute;
+    display:none
+}
+div.image-rotator a img
+{
+    width:70.4em
+}
+
+/*div.image-rotator
+{
+    position:relative;
+    width:70.4em;
+    height:28.1em;
+    background:url('http://media.goodwillindy.org/images/excel-center/2012/common/spinner.gif') center center no-repeat;
+}
+section#image-rotator ul
+{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    display:block;
+    position:absolute;
+    z-index:2;
+    left:-1em;
+    bottom:.5em
+}
+section#image-rotator ul li
+{
+    position:relative;
+    font-family: 'PT Sans Narrow', sans-serif;
+    width:2em;
+    height:2em;
+    line-height:2em;
+    margin-bottom: .1em;
+    color:#fff;
+    font-size:1.5em;
+    -moz-box-shadow: .1em .1em .1em #333;
+    -webkit-box-shadow: .1em .1em .1em #333;
+    box-shadow: .1em .1em .1em #333;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+    cursor:pointer
+}
+section#image-rotator ul li span
+{
+    display:none;
+    padding:0 1em 0 1em;
+    white-space:nowrap
+}
+section#image-rotator div
+{
+    position:absolute;
+    background:#A9C58B;
+    top:.2em;
+    left:.2em;
+    height:.1em;
+    width:1.5em
+}
+
+section#image-rotator a
+{
+    position:absolute;
+    display:none
+}
+section#image-rotator a img
+{
+    width:70.4em
+}*/
+/*section#fpNews
+{
+    min-height:12em
+}
+section#fpNews article
+{
+    min-height:11em
+}*/
+
+/* COPY */
+div.copy
+{
+	/*min-height:11em;*/
+	width:100%;
+	color:#679A31;
+	line-height:1.3em
+}
+div.copy a
+{
+	color: #FF9900;
+}
+/*div.copy a.selected
+{
+background:#A9C58B
+}
+div.copy ul
+{
+list-style-type:none;
+margin:0;
+padding:0
+}
+div.copy ul li h2,
+div.copy ul li p
+{
+padding:.5em 1em;
+margin:0
+}*/
+div.copy-title
+{
+background:#679A31;
+display:block;
+padding:.5em 0 .5em 0;
+margin: .5em 0 0 0;
+text-indent: 1em;
+border:.1em solid #fff;
+color:#fff;
+-moz-border-radius: .5em;
+border-radius: .5em;
+font-size: 1.5em;
+font-weight: bold;
+}
+
+/*div.copy ul li a
+{
+color:#FF9900
+}*/
+
+/*div.copy ul li img
+{
+float:left;
+margin:0 .5em .5em .7em;
+-moz-border-radius: .5em;
+border-radius: .5em;
+border:.1em solid #fff
+}*/
+
+/* END COPY */
+
+/* EMERGENCY MESSAGES */
+
+div.emrg-msg
+{
+	background: maroon;
+	color: #fff;
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+
+/* END EMERGENCY MESSAGES */
+
+/* ANNOUNCEMENTS */
+/*
+div.news
+{
+    display:block;
+    margin:0;
+    padding:.8em;
+    background:#FF9900;
+    color:#fff;
+    font-weight:bold;
+    text-align:center
+}
+*/
+/* END ANNOUNCEMENTS */
+
+    /* NEWS ARTICLE */
+    div.news div.article,
+    div.news div.events
+    {
+        position:relative;
+        display:block;
+        width:33em;
+        float:left;
+        border-top: .5em solid #679931;
+        border-bottom: .2em solid #679931;
+        margin:1em;
+        color:#679931;
+        height: 11.5em;
+        overflow:hidden
+    }
+    div.news div.article h2
+    {
+        text-transform:uppercase;
+        font-size:1.4em;
+        line-height:1em;
+        margin: .5em
+    }
+    div.news div.article img
+    {
+        width:8em;
+        height:6em;
+        float:left;
+        margin: 0 0 0 .7em;
+		-moz-border-radius: .5em;
+		border-radius: .5em;
+    }
+    
+    div.news div.article ul
+    {
+    	list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+    }
+
+    div.news div.article p
+    {
+        display:block;
+        width:26em;
+        float:right;
+        /*max-height:6.4em;*/
+        margin:0 .5em 1em .5em;
+        font-size: .9em
+    } 
+    
+/*    div.news div.article div.content
+    {
+        display:block;
+        width:16em;
+        float:right;
+        /*max-height:6.4em;*!/
+        margin:0 .5em 1em .5em;
+        font-size: .9em
+    }*/
+    div.news div.article a
+    {
+        position:absolute;
+        bottom:.7em;
+        right:0;
+        display:block;
+        float:right;
+        color:#fff;
+        padding:.8em 1em .8em 1em;
+        background:#FF9900;
+        text-decoration:none;
+        font-weight:bold;
+        -moz-border-radius: .5em;
+        border-radius: .5em;
+    }
+
+    /* END ARTICLE */
+    /* EVENTS */
+    div.news div.events h1
+    {
+        display:block;
+        font-size:3em;
+        font-weight: bold;
+        text-transform:uppercase;
+        margin: .2em 0 .1em 0;
+        padding:.25em .25em .25em 0
+    }
+    
+	div.news div.events h2
+	{
+	    position:absolute;
+	    top:.8em;
+	    right:5.5em;
+	    margin:0;
+	    padding:0;
+	    display:block;
+	    font-size:1em;
+	    line-height:1.2em;
+	    width:14em;
+	    font-weight:normal
+	}  
+    
+    div.news div.events ul
+    {
+    	list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+    }
+    
+    div.news div.events ul li
+    {
+    	padding: .1em;
+    	margin: .5em
+    }
+  
+/*	div.news div.events a.campusLink span
+	{
+	    display:block;
+	    float:left;
+	    padding:.1em .1em .1em .5em;
+	    margin: 0 .5em 0 0;
+	    background:#FF9900;
+	    color:#fff;
+	    text-decoration:none;
+	    font-size:.9em;
+	    font-weight:bold;
+	    width:9em;
+	    text-indent:.2em;
+		-moz-border-radius: .5em;
+		border-radius: .5em;
+	}*/
+	
+	div.news div.events span.campusLink
+	{
+	    display:block;
+	    float:left;
+	    height: 1.5em;
+	    line-height: .5em;
+	    margin: 0 .5em 0 0;
+	    background:#FF9900;
+	    color:#fff;
+	    text-decoration:none;
+	    font-size:.9em;
+	    font-weight:bold;
+	    width:9em;
+		-moz-border-radius: .5em;
+		border-radius: .5em;
+	}	
+  
+/*	div.news div.events h2 a
+	{
+		color: #fff;
+		text-decoration: none;
+	}*/
+    
+/*	div.news div.events h2
+	{
+	    display:block;
+	    float:left;
+	    padding:.1em .1em .1em .5em;
+	    margin: 0 .5em 0 0;
+	    background:#FF9900;
+	    color:#fff;
+	    text-decoration:none;
+	    font-size:.9em;
+	    font-weight:bold;
+	    width:9em;
+	    text-indent:.2em;
+		-moz-border-radius: .5em;
+		border-radius: .5em;
+	}*/
+    
+
+    
+/*    div.news div.events h2
+    {
+        position:absolute;
+        top:.8em;
+        right:6.5em;
+        margin:0;
+        padding:0;
+        display:block;
+        font-size:1em;
+        line-height:1.2em;
+        width:14em;
+        font-weight:normal
+    }*/
+/*
+    section#fpNews article.events ul
+    {
+        list-style-type:none;
+        padding:0;
+        margin:0
+    }
+    section#fpNews article.events ul li
+    {
+        position:relative;
+        margin: .4em 0 .4em 0;
+        font-size:.8em;
+        height:1.7em;
+        line-height:1.7em;
+        text-transform: capitalize
+    }
+    section#fpNews article.events ul li a
+    {
+        display:block;
+        float:left;
+        padding:.1em .1em .1em .5em;
+        margin: 0 .5em 0 0;
+        background:#FF9900;
+        color:#fff;
+        text-decoration:none;
+        font-size:.9em;
+        font-weight:bold;
+        width:9em;
+        text-indent:.2em
+    }
+    section#fpNews article.events ul li span
+    {
+        display:inline-block;
+        position:absolute;
+        right:0;
+        top:0
+    }*/
+    /* END EVENTS */
+/* END FRONT PAGE */
+/* INNER PAGES */
+div.aside-copy > div
+{
+	margin: 2em;
+}
+div.aside-copy h1
+{
+	display:block;
+	font-size: 4em;
+	line-height: 1.2em;
+	margin: 1em;
+	color:#23408F;
+	min-height:2em;
+	height: 1em;
+	margin: 1em 0 0 1em
+}
+
+div.aside-copy h1 em,
+div.aside-copy h1 strong
+{
+	display: block;
+	font-size: .5em;
+	font-weight: normal;
+	text-indent: 1em;
+	line-height: 1em
+}
+
+div.aside-copy h1 strong
+{
+	text-indent: 2em;
+}
+
+div.aside-copy ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 1em 0 1em 0;
+}
+
+div.inner-copy
+{
+    display:block;
+    float:left;
+    width:35em;
+    margin:1em 0 0 0;
+    line-height: 1.5em;
+/*-webkit-columns: .5em 2;
+-moz-columns: .5em 2*/
+}
+
+div.inner-copy img,
+.copy-thumb
+{
+	display:block;
+	float:right;
+	margin:.5em 0 .5em .5em;
+	border:.1em solid #333;
+	height:17em;
+	width:11em
+}
+
+div.aside-copy strong.news-title
+{
+	display: block;
+	width: 12em;
+	background: #fff;
+	padding: .6em;
+	margin: 0 0 .4em 0;
+	-moz-border-radius: .5em;
+	border-radius: .5em
+}
+
+div.aside-copy a
+{
+	display:block;
+	margin:0 0 0 1em
+}
+div.aside-copy a:hover
+{
+	background: #D0EAC7;
+}
+div.network > img
+{
+	display: block;
+	height: 20em;
+	margin: 5em 0 0 0;
+}
+/* END INNER PAGES */
+/* APPLICATION PAGE */
+/*section#apply
+{
+    display:block;
+    float:left;
+    width:35em
+}*/
+
+div.application-form
+{
+	margin: 0
+}
+
+div.application-form > div > div > div > div > div
+{
+	width: 45%;
+	float: left;
+	margin: 1em 0 1em 0
+}
+
+div.application-form label
+{
+	display: block
+}
+
+.app-other
+{
+margin:.5em 0 0 0;
+display:none
+}
+
+.app-other input
+{
+	background:yellow
+}
+
+span#msg
+{
+display:block;
+text-align:center;
+height:2em;
+line-height:2em;
+color: red
+}
+
+div.application-form input[type="submit"]
+{
+    display:block;
+    margin:auto;
+    width:17em;
+    clear: both;
+}
+
+/*div.application-form
+{
+min-height:50em
+}
+aside.application-form span
+{
+    display:block
+}
+aside.application-form p
+{
+    margin: 1.5em 0 -.5em 1em;
+    width:15em;
+    float:left;
+    overflow:hidden
+}
+aside.application-form #other
+{
+margin:.5em 0 0 0;
+display:none;
+background:yellow
+}
+aside.application-form input[type="submit"]
+{
+    display:block;
+    margin:auto
+}
+aside.application-form p.submit
+{
+    width:31em;
+    height:4.3em
+}
+aside.application-form p.submit input[type="submit"]
+{
+    width:13em
+}
+aside.application-form p.submit > span
+{
+display:block;
+text-align:center;
+height:2em;
+line-height:2em;
+color:Red
+}*/
+/* END APPLICATION */
+/* FAQ */
+div.faq
+{
+	position: relative;
+    display:block;
+    float:left;
+    width: 35em;
+    border: .1em solid red;
+    overflow: auto;
+}
+div.faq div.group
+{
+    /*display:none;*/
+    position:absolute;
+    top:0;
+    margin:1em 0 1em 0
+}
+div.faq div.search
+{
+    background:#9CAFE7;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+    padding:1em;
+    color:#fff;
+    display: block;
+}
+/*div.faq div.group
+{
+    background:#fff;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+    padding:1em;
+    color:#333;
+    /*margin: 1em 0 1em 1em;*!/
+}*/
+
+div.faq div.group strong
+{
+    display:block;
+    margin:.7em 0 .3em 0
+}
+
+div.faq div.group h2
+{
+    font-weight: bold;
+    font-size:1.4em
+}
+p.faq-nav a
+{
+    display:block;
+    margin: .2em 1em .2em 0;
+    padding:.8em;
+    text-align:right;
+    background:#FFBD24;
+    font-weight:bold;
+    text-decoration:none;
+    color:#fff;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+    /*text-shadow: 0px 2px -2px #333,0px 2px 2px #666;*/
+}
+p.faq-nav a:hover
+{
+    background:#FFD28F
+}
+p.faq-nav a.selected
+{
+    background:#E6A100
+}
+/*section#faq article > div
+{
+    display:none
+}
+section#faq article span em
+{
+    font-size:.7em
+}
+section#faq article input[type="text"]
+{
+    display:block
+}
+section#faq strong
+{
+    display:block;
+    margin:.7em 0 .3em 0
+}
+section#faq article header
+{
+    font-weight: bold;
+    font-size:1.4em
+}
+section#faq article p
+{
+    margin:1.5em
+}
+p.faq-nav a
+{
+    display:block;
+    margin: .2em 1em .2em 0;
+    padding:.8em;
+    text-align:right;
+    background:#FFBD24;
+    font-weight:bold;
+    text-decoration:none;
+    color:#fff;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+    /*text-shadow: 0px 2px -2px #333,0px 2px 2px #666;*!/
+}
+p.faq-nav a:hover
+{
+    background:#FFD28F
+}
+p.faq-nav a.selected
+{
+    background:#E6A100
+}*/
+/* END FAQ */
+/* PRESS RELEASE */
+section#press-release article aside
+{
+    width:15em;
+    background:#fff;
+    margin: 1em 0 1em 1em;
+    padding:.5em;
+    float:right
+}
+section#press-release article aside h4
+{
+    margin: .2em 0 .2em 0
+}
+section#press-release article aside a
+{
+    display:block
+}
+#print
+{
+display:none
+}
+/* END PRESS RELEASE */
+/* LOCATIONS */
+
+div.locations div#msg
+{
+    position:absolute;
+    top: 34em;
+    display:none;
+    left:50%;
+    margin-left:-32.5em;
+    width:65.4em;
+    height:2em;
+    line-height:2em;
+    text-align:center;
+    background:#FFFF8F;
+    border:.1em solid #F5D866
+}
+
+div.locations iframe
+{
+	width: 100%;
+	height:28.1em;
+	border:none;
+	margin:0 0 .2em 0;
+	padding:0;
+	background:url('http://media.goodwillindy.org/images/excel-center/2012/common/spinner.gif') center center no-repeat
+}
+
+div.locations h1
+{
+	background:#A9C58B;
+    font-weight: bold;
+    font-size:1.4em;
+    height:2em;
+    line-height:2em;
+    text-indent:1em;
+    color:#fff;
+    margin:0
+}
+div.locations h1 span
+{
+font-size:.5em;
+font-weight:normal
+}
+
+div.campuses ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	width: 100%
+}
+
+div.campuses ul li
+{
+	background:#577CB7;
+	color:#fff;
+	display:block;
+	float:left;
+	width:18%;
+	margin:0 .5% 0 .4%;
+	padding: .5%;
+}
+
+div.campuses h1
+{
+    font-weight: bold;
+    font-size:1.4em;
+    height:2em;
+    line-height:2em;
+    text-indent:1em;
+    color:#fff;
+    margin:0
+}
+
+div.campuses a
+{
+    display:block;
+    background:#E79924;
+    padding:.5em;
+    margin: .2em 0 .2em 0;
+    color:#fff;
+    font-weight:bold
+}
+
+/*section#locations > div#msg
+{
+    position:absolute;
+    top:25em;
+    display:none;
+    left:50%;
+    margin-left:-32.5em;
+    width:65.4em;
+    height:2em;
+    line-height:2em;
+    text-align:center;
+    background:#FFFF8F;
+    border:.1em solid #F5D866
+}
+section#locations iframe
+{
+    width:70.4em;
+    height:28.1em;
+    border:none;
+    margin:0;
+    padding:0;
+    background:url('http://media.goodwillindy.org/images/excel-center/2012/common/spinner.gif') center center no-repeat
+}
+section#locations > header
+{
+    margin:0 0 .2em 0;
+    background:#A9C58B;
+}
+section#locations > p
+{
+    background:#C2D6AE;
+    margin:0 0 .2em 0;
+    padding:1em;
+    color:#555;
+}
+section#locations > header h1
+{
+    font-weight: bold;
+    font-size:1.4em;
+    height:2em;
+    line-height:2em;
+    text-indent:1em;
+    color:#fff;
+    margin:0
+}
+section#locations > header h1 span
+{
+font-size:.5em;
+font-weight:normal
+}
+section#locations article
+{
+    background:#577CB7;
+    color:#fff;
+    display:block;
+    float:left;
+    width:13.98em;
+    min-height:24em;
+    margin:0 0 0 .1em
+}
+section#locations article.selected
+{
+    background:#313F88
+}
+section#locations article.first-child
+{
+    margin:0 .1em 0 0
+}
+section#locations article > *
+{
+    margin:.5em
+}
+section#locations article h1
+{
+    font-size:1.1em
+}
+section#locations article > p
+{
+    line-height:1.2em;
+    font-size:.9em;
+    height: 5.4em
+}
+section#locations article > a
+{
+    display:block;
+    background:#E79924;
+    padding:.5em;
+    color:#fff;
+    font-weight:bold
+}
+section#locations article > p > a
+{
+color:#fff
+}*/
+/* END LOCATIONS */
+/* SITE MAP */
+div.site-map h3
+{
+    border-bottom:.1em solid #333;
+    margin: 1em 0 1em 0;
+    padding: .5em;
+    display: block;
+    clear: both;
+}
+div.site-map a
+{
+    display:block;
+    width: 21.5em;
+    float:left;
+    margin:0 0 .5em 1em
+}
+
+/* END SITE MAP */
+/* ARTICLE */
+
+div.articleAside
+{
+	width:17em;
+	float:left
+}
+
+div.articleAside img
+{
+    width:17em;
+}
+
+div.articleContent
+{
+    width:52em;
+    float: left;
+    margin:1em 0 1em 1em
+}
+
+div.articleContent h1
+{
+    padding:.1em 0 .1em 0;
+    margin:.5em 0 .5em 0;
+    line-height:1.2em
+}
+
+div.articleContent strong.date
+{
+	display: block;
+}
+
+.pq-text
+{
+    width: 15em;
+    line-height:1.6em;
+    float: right;
+    margin: .5em 0 .5em .5em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    font-size: 1.2em;
+    font-weight:bold;
+}
+
+/*aside#article
+{
+    width:17em;
+    float:left
+}
+aside#article header h4
+{
+    border-bottom:.1em dotted #333;
+    padding:0 0 .3em 0;
+    margin:1em 0 .3em 0
+}
+aside#article > a
+{
+    display:block;
+    font-size:.9em;
+    line-height:2em
+}
+aside#article > img
+{
+    width:17em;
+    /*height:17em*!/
+}
+section#article
+{
+    width:52em;
+    margin:1em 0 1em 1em
+}
+section#article img.left,
+section#article img.right
+{
+float:left;
+margin:.5em .5em .5em 0;
+border:.1em solid #000
+}
+section#article img.right
+{
+float:right;
+margin:.5em 0 .5em .5em
+}
+section#article p:first-of-type
+{
+    font-weight:bold
+}
+section#article header h1
+{
+    padding:.1em 0 .1em 0;
+    margin:.5em 0 .5em 0;
+    line-height:1.2em
+}
+section#article > time,
+section#article > a,
+section#article > strong
+{
+    font-size:.8em;
+    display:block
+}
+section#article > strong
+{
+    font-weight:normal
+}
+section#article > span
+{
+    display:block;
+    margin:.5em 0 0 0;
+    padding:0
+}
+
+section#article > hr
+{
+    background:#333;
+    margin:.5em 0 .5em 0
+}
+.pq-text
+{
+    width: 15em;
+    line-height:1.6em;
+    float: right;
+    margin: .5em 0 .5em .5em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    font-size: 1.2em;
+    font-weight:bold;
+}*/
+/*
+.pullquote-text:before {
+    content: "“ ";
+    font-size: 3em;
+    font-weight: bold;
+}
+ 
+.pullquote-text:after {
+    content: " ”";
+    font-size: 1em;
+    font-weight: bold;
+}
+*/
+/* END ARTICLE */
+/* CAMPUS PAGES */
+
+/* CAMPUS HOME */
+div.campus-body
+{
+	/*margin-top: .1em*/
+}
+div.campus-left
+{
+    width:18.4%;
+    float:left;
+    margin: 0
+}
+
+div.campus-left a
+{
+    background:#FF9900;
+    display:block;
+    color:#fff;
+    font-weight:bold;
+    font-size:.9em;
+    padding: .7em;
+    text-align:center;
+    margin:0 0 .2em 0
+}
+div.campus-left img
+{
+    width: 100%
+}
+
+div.campus
+{
+    width: 57.4%;
+    float:left
+}
+
+div.campus h1
+{
+	margin: .5em 0 0 0;
+}
+
+div.campus-right
+{
+    float:left;
+    width:24.2%;
+}
+
+div.campus-right h2.title
+{
+	background:#CFDFBF;
+	padding-top:.7em;
+	padding-bottom:.7em;
+	text-indent: .7em;
+	margin:0 0 .2em 0;
+    width: 100%;
+    color:#23408F
+}
+
+div.campus-right ul
+{
+    background:#CFDFBF;
+    list-style-type:none;
+    padding:0;
+    margin:0 0 .2em 0;
+    display:block;
+    width: 100%;
+    font-size:.9em
+}
+div.campus-right ul li
+{
+    padding:.3em 0 .3em 1em
+}
+
+div.campus-right ul li span
+{
+	text-indent: 1em;
+}
+
+/*div.campus-left
+{
+    width:13em;
+    float:left;
+    margin:0 0 0 .1em
+}
+aside#campus-left > a
+{
+    background:#FF9900;
+    display:block;
+    color:#fff;
+    font-weight:bold;
+    font-size:.9em;
+    padding: .7em;
+    text-align:center;
+    margin:0 0 .2em 0
+}
+aside#campus-left > img
+{
+    width:13em;
+    height:35em
+}
+section#campus
+{
+    display:block;
+    width:32.8em;
+    float:left
+}
+section#campus > p,
+section#campus > h1,
+section#campus > h3,
+section#campus > h4
+{
+    margin:.5em;
+    color:#23408F
+}
+section#campus > p
+{
+    color:#333
+}
+aside#campus-right
+{
+    float:left;
+    width:24.4em
+}
+aside#campus-right header
+{
+    background:#CFDFBF;
+    padding:.7em;
+    margin:0 0 .2em 0;
+}
+aside#campus-right header h2
+{
+    width:10em;
+    color:#23408F;
+    margin:0;
+    padding:.1em
+}
+aside#campus-right header > span
+{
+    display:block;
+    width:3em;
+    float:right
+}
+aside#campus-right ul
+{
+    background:#CFDFBF;
+    list-style-type:none;
+    padding:0;
+    margin:0 0 .2em 0;
+    display:block;
+    font-size:.9em
+}
+aside#campus-right ul li
+{
+    padding:.3em 0 .3em 1em
+}
+aside#campus-right ul li date
+{
+    margin:0 1em 0 0;
+    font-weight:bold
+}
+aside#campus-right ul:nth-of-type(2)
+{
+    list-style-type: circle;
+    padding:0 .5em 0 2em
+}
+*/
+img.campus-graduate
+{
+width:5em;
+margin:.2em .5em .5em .5em;
+float:left
+}
+/* END CAMPUS HOME */
+/* CAMPUS FACULTY */
+
+section#campus p strong
+{
+    display:block
+}
+section#campus div.contact > p
+{
+    background:#CFDFBF;
+    margin:.2em;
+    padding:.5em
+}
+section#campus div.contact > p a
+{
+    display:block;
+    float:right;
+    padding:.8em;
+    background:#FFBD24;
+    font-weight:bold;
+    text-decoration:none;
+    color:#fff;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+    
+}
+section#campus div.contact > h3
+{
+    margin:.5em
+}
+/* END CAMPUS FACULTY */
+/* END CAMPUS PAGES */
+/* FOOTER */
+div.footer
+{
+    margin:1em 0 0 0;
+	color:#fff;
+	font: normal .8em Tahoma,Verdana,Arial
+}
+
+/*div.footer div.links > div
+{
+	margin: 0 !important;
+}*/
+
+div.footer li.info-graphic
+{
+	width: 6%;
+}
+
+div.footer li.info-graphic img
+{
+	height: 160px;
+	width: 38px;
+	float: right;
+	margin: 2em 0 0 0;
+}
+
+div.footer li.info div.address a
+{
+	margin: 0
+}
+
+div.footer div.links ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0
+}
+
+div.footer div.links ul li
+{
+	display:block;
+	background: #A9C58B url('http://media.goodwillindy.org/images/excel-center/2012/nav/nav-bottom-edge.jpg') top left repeat-x; /* IE */
+	background:-moz-linear-gradient(15% 6% 90deg,#A9C58B, #A9C58B, #679931 24%); /* Firefox */
+	/*background: -ms-linear-gradient(top, #A9C58B 0%,#8f0222 80%,#679931 100%); /* IE10+ */
+	background: -webkit-gradient(linear, 0% 5%, 0% 0%, from(#A9C58B), to(#679931), color-stop(.1,#679931)); /* For webkit */
+	height: 18em;
+	line-height: 1.5em;
+	text-align: left;
+	margin-bottom:.25%
+}
+
+div.footer div.links ul li.info
+{
+	width: 20%;
+	margin-left: 0;
+}
+
+div.footer div.links ul li
+{
+	width: 15.75%;
+	margin-left: .25%;
+	float: left;
+}
+
+div.footer div.links strong,
+div.footer div.links a 
+{
+    display:block;
+    margin:0 0 0 .5em;
+    color: #fff;
+}
+
+div.footer div.links a 
+{
+	margin-left: 1em;
+}
+
+div.footer div.links strong
+{
+    margin-top: 2em;
+    text-transform: uppercase;
+}
+
+div.footer li.info div.address
+{
+    width: 95%;
+    float: right
+}
+
+div.footer li.info img
+{
+    width:13em;
+    margin: 1em 0 0 0
+}
+
+div.footer div.copyright
+{
+    height: 3em;
+    line-height: 3em;
+    text-align: right;
+    background: #A9C58B;
+    margin: .1em 0 0 0;
+}
+div.footer div.copyright span
+{
+    display:block;
+    float:right;
+    margin:0 1em 0 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+/* END FOOTER */
